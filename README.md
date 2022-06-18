@@ -4,8 +4,8 @@ Trabalho 1 da disciplina de Desenvolvimento WEB 2022 - Framework Spring
 
 ## Equipe
 
-Fábio Cesar Polinski - 18009426
-Gabriel Penteado - 18003026
+- Fábio Cesar Polinski - 18009426
+- Gabriel Penteado - 18003026
 
 ## Projeto
 
