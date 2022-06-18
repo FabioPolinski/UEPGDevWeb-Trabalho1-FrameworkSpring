@@ -14,7 +14,7 @@ Gerenciamento simplista de pagamentos de mensalidades para jogadores de futebol 
 ## O que foi utilizado
 
 ### Spring Initializer 
-- SpringBoot 2.7.0 
+- SpringBoot 2.6.8 
 - Java 8
 - Dependências: Spring Web, SpringData JPA, PostgreSQL Driver
 
