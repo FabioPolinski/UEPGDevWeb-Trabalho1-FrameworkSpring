@@ -60,14 +60,15 @@ public class JogadorController {
                 //Se a busca nao retornou nada, erro de sem conteudo
                 if(lj.isEmpty()){
                     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-                }else{
+                }
+                else{
                     //Se retornou algo, retornamos a lista e um ok
                     return new ResponseEntity<>(lj, HttpStatus.OK);
                 }
-            } catch (Exception e){
-                //Se nao der boa a busca, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
-                return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        } catch (Exception e){
+            //Se nao der boa a busca, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     //Criar jogador (post)
@@ -83,9 +84,9 @@ public class JogadorController {
             //Retorna o jogador criado e um status de criado
             return new ResponseEntity<>(_j, HttpStatus.CREATED);
 
-            } catch (Exception e){
-                //Se nao der boa a criaçao, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
-                return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        } catch (Exception e){
+            //Se nao der boa a criaçao, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     
@@ -154,9 +155,9 @@ public class JogadorController {
             rep.deleteAll();
             //Retorna q esta sem conteudo
             return new ResponseEntity<HttpStatus>(HttpStatus.NO_CONTENT);
-            } catch(Exception e){
-                //Se n existir o objeto retorna erro
-                return new ResponseEntity<HttpStatus>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        } catch(Exception e){
+            //Se n existir o objeto retorna erro
+            return new ResponseEntity<HttpStatus>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 }

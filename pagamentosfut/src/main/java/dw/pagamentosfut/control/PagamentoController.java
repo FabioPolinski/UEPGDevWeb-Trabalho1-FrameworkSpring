@@ -46,7 +46,7 @@ public class PagamentoController {
                 @RequestParam(required=false, defaultValue = "0") double valor) { 
                     //@RequestParam(required=false, defaultValue = "0") int cod_jogador) {
                     //Adicionar no primeiro if cod_jogador == 0 se conseguir
-        try {
+        try{
                 List<Pagamento> lp = new ArrayList<Pagamento>();
                 
                 //Se nao esta passando nome ou email, adiciona a lista e retorna todos os jogadores encontrados no banco de dados
@@ -69,14 +69,15 @@ public class PagamentoController {
                 //Se a busca nao retornou nada, erro de sem conteudo
                 if(lp.isEmpty()){
                     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-                }else{
+                }
+                else{
                     //Se retornou algo, retornamos a lista e um ok
                     return new ResponseEntity<>(lp, HttpStatus.OK);
                 }
-            } catch (Exception e){
-                //Se nao der boa a busca, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
-                return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+        } catch (Exception e){
+            //Se nao der boa a busca, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     //Criar pagamento (post) com o codigo do jogador
@@ -101,9 +102,9 @@ public class PagamentoController {
                 //Caso nao existe not found
                 return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
             }
-            } catch (Exception e){
-                //Se nao der boa a criaçao, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
-                return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        } catch (Exception e){
+            //Se nao der boa a criaçao, não retornamos nenhum objeto e retornamos um erro (httpstatuses.com)
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     
