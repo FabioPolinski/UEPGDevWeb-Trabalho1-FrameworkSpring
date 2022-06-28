@@ -28,4 +28,6 @@ Gerenciamento simplista de pagamentos de mensalidades para jogadores de futebol 
 ### API para consultas e gravações
 - Talend API Tester
 
+### Apache Maven 3.8.5
+
 ### Descrição da API dentro do README da pasta pagamentosfut
