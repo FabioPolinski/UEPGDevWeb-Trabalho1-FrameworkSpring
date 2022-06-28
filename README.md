@@ -13,6 +13,8 @@ Gerenciamento simplista de pagamentos de mensalidades para jogadores de futebol 
 
 ## O que foi utilizado
 
+### Apache Maven 3.8.5
+
 ### Spring Initializer 
 - SpringBoot 2.6.8 
 - Java 8
@@ -27,7 +29,5 @@ Gerenciamento simplista de pagamentos de mensalidades para jogadores de futebol 
 
 ### API para consultas e gravações
 - Talend API Tester
-
-### Apache Maven 3.8.5
 
 ### Descrição da API dentro do README da pasta pagamentosfut
