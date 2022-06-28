@@ -19,7 +19,7 @@ Gerenciamento simplista de pagamentos de mensalidades para jogadores de futebol 
 - Dependências: Spring Web, SpringData JPA, PostgreSQL Driver
 
 ### Banco de dados
-- PostgreSQL
+- PostgreSQL 13.4
 - IDE: pgAdmin 4
 
 ### Edição do codigo e integração com o git
